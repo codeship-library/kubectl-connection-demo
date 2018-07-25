@@ -1,0 +1,4 @@
+- service: kubectl
+  command: kubectl config view
+# - service: kubectl
+#   command: kubectl cluster-info

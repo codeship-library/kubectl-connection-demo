@@ -1,0 +1,3 @@
+kubectl:
+  encrypted_env_file: k8s-env.encrypted
+  image: codeship/kubectl
