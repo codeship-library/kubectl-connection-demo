@@ -27,7 +27,7 @@ docker run --rm -it -v $(pwd):/files codeship/env-var-helper ls k8s-env
 ## View individual file stored by codeship/env-var-helper tool
 
 ```
-docker run --rm -it -v $(pwd):/files dkcodeship/env-var-helper cat /root/.kube/config k8s-env
+docker run --rm -it -v $(pwd):/files codeship/env-var-helper cat /root/.kube/config k8s-env
 ```
 
 ## Remove an individual file stored by codeship/env-var-helper tool
@@ -39,7 +39,7 @@ docker run --rm -it -v $(pwd):/files codeship/env-var-helper rm /root/.kube/conf
 ## Store file back to environment variable file
 
 ```
-docker run --rm -it -v $(pwd):/files dkcodeship/env-var-helper cp kubeconfigdata:/root/.kube/config k8s-env
+docker run --rm -it -v $(pwd):/files codeship/env-var-helper cp kubeconfigdata:/root/.kube/config k8s-env
 ```
 
 ## Encrypt the environment variables file
