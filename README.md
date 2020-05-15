@@ -50,7 +50,7 @@ docker run --rm -it -v $(pwd):/files codeship/env-var-helper cp kubeconfigdata:/
 - From your Codeship 'Project Settings' > 'General' page, scroll down to AES key section and click 'Download Key'
 - Move downloaded key to your project directory and rename to `codeship.aes`
 - Add `codeship.aes` to your `.gitignore` file (!)
-- Add [any additional environment variables](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypting-your-environment-variables) to the `codeship.env` file
+- Add [any additional environment variables](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypting-your-environment-variables) to the `k8s-env.env` file
 - Run `jet encrypt k8s-env k8s-env.encrypted`
 - The `k8s-env.encrypted` will be safe to check into your git repository
 - Remove the plaintext file from your project --> `rm k8s-env`
